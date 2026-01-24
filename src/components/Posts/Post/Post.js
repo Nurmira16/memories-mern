@@ -10,11 +10,11 @@ import moment from 'moment/moment';
 const Post = ({post}) => {
     return (
         <Card sx={cardStyles}>
-            <CardMedia 
-    sx={mediaStyles} 
-    image={post.selectedFile || 'https://user-images.githubusercontent.com/194400/49531010-48dad180-f8b1-11e8-8d89-1e61320e1d82.png'} 
-    title={post.title} 
-/>
+                    <CardMedia 
+            sx={mediaStyles} 
+            image={post.selectedFile || 'https://user-images.githubusercontent.com/194400/49531010-48dad180-f8b1-11e8-8d89-1e61320e1d82.png'} 
+            title={post.title} 
+        />
             <div sx={overlayStyles}>
                 <Typography variant='h6'>{post.creator}</Typography>
                 <Typography variant='body2'>{moment(post.createdAt).fromNow()}</Typography>
