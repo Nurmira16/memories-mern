@@ -1,10 +1,10 @@
-
-
 export const paperStyles = {
-  '& .MuiTextField-root': {
-    m: 1, 
-  },
-  p: 2, 
+  padding: '20px',
+  borderRadius: '15px',
+  boxShadow: '0 10px 30px rgba(0,0,0,0.1)',
+  position: 'sticky',
+  top: '100px', 
+  transition: 'all 0.3s ease',
 };
 
 export const formStyles = {
@@ -13,11 +13,9 @@ export const formStyles = {
   justifyContent: 'center',
 };
 
-export const fileInputStyles = {
-  width: '97%',
-  my: 1.25,
-};
-
 export const buttonSubmitStyles = {
-  mb: 1.25, 
+  marginBottom: '10px',
+  marginTop: '15px',
+  borderRadius: '8px',
+  padding: '10px 0',
 };

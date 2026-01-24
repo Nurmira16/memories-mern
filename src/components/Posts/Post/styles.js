@@ -5,6 +5,7 @@ export const cardStyles = {
   borderRadius: 2, 
   height: '100%',
   position: 'relative',
+ 
 };
 
 export const mediaStyles = {
@@ -15,10 +16,7 @@ export const mediaStyles = {
 };
 
 export const overlayStyles = {
-  position: 'absolute',
-  top: '20px',
-  left: '20px',
-  color: '#fff',
+  margin:'20px'
 };
 
 export const overlay2Styles = {
@@ -30,12 +28,13 @@ export const overlay2Styles = {
 
 export const detailsStyles = {
   display: 'flex',
-  justifyContent: 'space-between',
-  m: '20px',
+  flexWrap: 'wrap',         
+  margin: '20px',
+  textAlign: 'center',    
 };
-
 export const titleStyles = {
-  px: 2,
+  px: 1,
+  
 };
 
 export const cardActionsStyles = {

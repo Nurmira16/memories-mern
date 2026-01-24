@@ -15,16 +15,16 @@ const Post = ({post}) => {
             image={post.selectedFile || 'https://user-images.githubusercontent.com/194400/49531010-48dad180-f8b1-11e8-8d89-1e61320e1d82.png'} 
             title={post.title} 
         />
-            <div sx={overlayStyles}>
+            <div style={overlayStyles}>
                 <Typography variant='h6'>{post.creator}</Typography>
                 <Typography variant='body2'>{moment(post.createdAt).fromNow()}</Typography>
             </div>
-            <div sx={overlay2Styles}>
+            <div style={overlay2Styles}>
                 <Button style={{color:'white'}} size='small' onClick={()=>{}}>
                     <MoreHorizIcon fontSize='default'/>
                 </Button>
             </div>
-            <div sx={detailsStyles}>
+            <div style={detailsStyles}>
                 <Typography variant='body2' color="textSecondary">{post.tags.map((tag)=>`#${tag}`)}</Typography>
             </div>
             <CardContent>

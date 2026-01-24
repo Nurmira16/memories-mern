@@ -24,18 +24,22 @@ const App=()=>{
         </AppBar>
         <Grow in>
             <Container>
-                <Grid container justifyContent="space-between" alignItems="stretch" spacing={3}>
-                    <Grid item xs={12} sm={7}>
+                <Grid 
+                    container 
+                    flexDirection={{ xs: 'column-reverse', sm: 'row' }} 
+                    justifyContent="space-between" 
+                    alignItems="flex-start" 
+                    spacing={4} 
+                    >
+                    <Grid item xs={12} sm={8}> 
                         <Posts setCurrentId={setCurrentId}/>
                     </Grid>
-                    <Grid item xs={12} sm={4}>
-
-                    <Form currentId={currentId} />
-
+                    <Grid item xs={12} sm={3.5} md={3}> 
+                        <Form currentId={currentId} />
                     </Grid>
-                </Grid>
+                    </Grid>
             </Container>
-        </Grow>
+    </Grow>
       </Container>
     )
 }
